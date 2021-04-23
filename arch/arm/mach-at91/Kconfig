@@ -37,6 +37,13 @@ config TARGET_AT91SAM9261EK
 	bool "Atmel at91sam9261 reference board"
 	select CPU_ARM926EJS
 
+config TARGET_RTH9580WF01
+	bool "Resideo RTH9580WF01 thermostat board"
+	select CPU_ARM926EJS
+	select AT91SAM9X5
+	select BOARD_EARLY_INIT_F
+	select BOARD_LATE_INIT
+
 config TARGET_PM9261
 	bool "Ronetix pm9261 board"
 	select CPU_ARM926EJS
@@ -201,6 +208,7 @@ source "board/egnite/ethernut5/Kconfig"
 source "board/esd/meesc/Kconfig"
 source "board/l+g/vinco/Kconfig"
 source "board/mini-box/picosam9g45/Kconfig"
+source "board/resideo/rth9580wf01/Kconfig"
 source "board/ronetix/pm9261/Kconfig"
 source "board/ronetix/pm9263/Kconfig"
 source "board/ronetix/pm9g45/Kconfig"

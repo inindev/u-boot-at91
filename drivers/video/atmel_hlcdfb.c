@@ -489,6 +489,7 @@ static int atmel_hlcdc_probe(struct udevice *dev)
 	uc_priv->xsize = priv->timing.hactive.typ;
 	uc_priv->ysize = priv->timing.vactive.typ;
 	uc_priv->bpix = priv->vl_bpix;
+	uc_priv->rot = fdtdec_get_uint(gd->fdt_blob, dev->of_offset, "rotate", 0);
 
 	/* Enable flushing if we enabled dcache */
 	video_set_flush_dcache(dev, true);
