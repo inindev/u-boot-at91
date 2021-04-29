@@ -11,7 +11,7 @@
 #define MICROCHIP_LOGO_8BPP_HEIGHT	56
 
 #define MICROCHIP_LOGO_8BPP_X_OFFSET	0
-#define MCIROCHIP_LOGO_8BPP_Y_OFFSET	0
+#define MICROCHIP_LOGO_8BPP_Y_OFFSET	0
 
 /* Format: BMP 8BPP 240*60 */
 unsigned char microchip_logo_8bpp[] = {
