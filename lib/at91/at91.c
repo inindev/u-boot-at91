@@ -16,7 +16,7 @@ void get_atmel_logo_info(vidinfo_t *info)
 	info->logo_width = ATMEL_LOGO_8BPP_WIDTH;
 	info->logo_height = ATMEL_LOGO_8BPP_HEIGHT;
 	info->logo_x_offset = ATMEL_LOGO_8BPP_X_OFFSET;
-	info->logo_y_offset = ATMEL_LOGO_8BPP_X_OFFSET;
+	info->logo_y_offset = ATMEL_LOGO_8BPP_Y_OFFSET;
 	info->logo_addr = (u_long)atmel_logo_8bpp;
 }
 
@@ -25,6 +25,6 @@ void get_microchip_logo_info(vidinfo_t *info)
 	info->logo_width = MICROCHIP_LOGO_8BPP_WIDTH;
 	info->logo_height = MICROCHIP_LOGO_8BPP_HEIGHT;
 	info->logo_x_offset = MICROCHIP_LOGO_8BPP_X_OFFSET;
-	info->logo_y_offset = MICROCHIP_LOGO_8BPP_X_OFFSET;
+	info->logo_y_offset = MICROCHIP_LOGO_8BPP_Y_OFFSET;
 	info->logo_addr = (u_long)microchip_logo_8bpp;
 }
